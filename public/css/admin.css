@@ -1,0 +1,68 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #46484b;
+    text-align: center;
+}
+
+h1{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 5rem;
+    color: #DDDDDD;
+}
+
+.new-post{
+    width: 80%;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2rem;
+    padding: 2%;
+    border-color: #DDDDDD;
+    color: #DDDDDD;
+    border-style: solid;
+    border-radius: 30px;
+    border-width: 3px;
+    text-decoration: none;
+    margin: 3rem;
+}
+
+input{
+    width: 80%;
+    height: 3rem;
+    background-color: #46484b ;
+    border-style: solid;
+    border-radius: 30px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3rem;
+    color: #8a0f0f;
+}
+
+.post_body{
+    width: 80%;
+}
+
+table{
+    border-style: solid;
+    border-color: #DDDDDD;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2rem;
+    color: #DDDDDD;
+    border-spacing: 1rem;
+}
+
+.login-holder{
+    background-color: #DDDDDD;
+    margin: 2%;
+    padding: 2%;
+    border-radius: 30px;
+}
+
+label{
+    color: #8a0f0f;
+    font-family: 'Ubuntu', sans-serif;
+
+}

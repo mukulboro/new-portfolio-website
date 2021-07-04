@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="../css/blog.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<%- include('partials/top_nav',  {pageTitle: post.title})%> 
+<div id="#pageTop"></div>
+
+<style>
+    body{
+        color: #DDDDDD;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1rem;
+        text-align: justify;
+    }
+</style>
+
+<body>
+    <div class="box">
+        <center><h1><%= post.title %> </h1></center>
+        <%- post.content %> 
+    </div>
+</body>
+
+<%- include('partials/footer') %> 

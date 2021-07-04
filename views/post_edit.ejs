@@ -1,0 +1,25 @@
+<%- include('partials/top_nav',  {pageTitle: "Edit Post"})%>
+<link rel="stylesheet" href="../../css/admin.css">
+<script src="https://cdn.ckeditor.com/4.16.1/standard/ckeditor.js"></script>
+<div id="#pageTop"></div>
+
+<body>
+    <center>
+        <h1>Edit Post</h1>
+        <form action="/admin" method="POST">
+            <input type="text" name="post_title" value="<%= post.title %> "><br>
+            <input type="text" name="image_url" value="<%= post.imageURL %><br>
+            <section class="post-body">
+                <textarea name="post_body" id="body"><%= post.content %></textarea>
+                <script>
+                        CKEDITOR.replace( 'post_body' );
+                </script>
+
+            </section>
+                <br>
+            <button type="Update" name="post_url" value="<%= post.kebabUrl %>">Submit</button>
+        </form>
+    </center>
+</body>
+
+<%- include('partials/footer') %> 

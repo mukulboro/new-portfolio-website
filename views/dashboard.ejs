@@ -1,0 +1,28 @@
+<%- include('partials/top_nav',  {pageTitle: "Admin Dashboard"})%>
+<link rel="stylesheet" href="css/admin.css">
+
+<body>
+    <center>
+        <h1>Dashboard</h1>
+        <a href="/new-post" class="new-post">
+        Create New Post
+        </a>
+        <a href="/add-skill" class="new-post">
+        Add portfolio
+        </a>
+
+        <h1>Old Posts</h1>
+        <table>
+            <% for(postIndex in posts){%> 
+            <tr>
+                <td><%= posts[postIndex].title %> </td>
+                <td><a href="<%= "/admin/edit/"+ posts[postIndex].kebabUrl %> ">Edit Post</a></td>
+                <td><a href="<%= "/admin/delete/"+ posts[postIndex].kebabUrl %>">Delete Post</a></td>               
+            </tr>
+            <% } %> 
+
+        </table>
+    </center>
+</body>
+
+<%- include('partials/footer') %> 

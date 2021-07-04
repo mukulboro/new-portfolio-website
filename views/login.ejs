@@ -1,0 +1,22 @@
+<%- include('partials/top_nav',  {pageTitle: "Admin Dashboard"})%>
+<link rel="stylesheet" href="css/admin.css">
+
+<body>
+    <center>
+        <h1>Login</h1>
+
+        <div class="login-holder">
+
+            <form action="/login" method="POST">
+                <label for="email">Username:</label>
+                <input type="email" name="email" autocomplete="off"><br>
+                <label for="password">Password:</label>
+                <input type="password" name="password"><br>
+                <button>Submit</button>
+            </form>
+
+        </div>
+    </center>
+</body>
+
+<%- include('partials/footer') %> 

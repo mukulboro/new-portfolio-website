@@ -1,0 +1,105 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    transition: 1s;
+    margin: 0;
+    padding: 0;
+    background-image: url(../assets/bg3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h1{
+    margin: 4rem 0 0 2rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 5rem;
+    color: #DDDDDD;
+}
+
+#last-name{
+    transition: 1s;
+    color: #DDDDDD;
+}
+
+h2{
+    margin: 4rem 0 0 2rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3rem;
+    color: #8a0f0f;
+    width: 40%;
+    text-align: left;
+   
+}
+
+.right-side{
+    float: right;
+    margin-right: 2rem;
+    text-align: right;
+}
+
+.right-side h1{
+    padding: 0 0 2rem 0;
+}
+
+#skill{
+    transition: 0.5s;
+    font-family: monospace;
+    color: #DDDDDD;
+}
+
+.small-action{
+    transition: 1s;
+    text-decoration: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.5rem;
+    padding: 1rem;
+    background-color: #8a0f0f;
+    border-style: solid;
+    border-color: #8a0f0f;
+    border-width: 2px;
+    border-radius: 30px;
+    
+}
+
+.small-action:hover{
+    transition: 1s;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    background-color: #F05454;
+}
+
+@media only screen and (max-width: 600px) {
+    
+    h1{
+        text-align: center;
+    }
+
+    .page-top{
+        top: 0;
+    }
+
+    h2{
+        color: #F05454;
+        margin: 4rem 0 0 0;
+        width: 100%;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .right-side{
+        text-align: center;
+        float: center;
+        top: 0;
+    }
+
+    .small-action{
+        font-size: 2rem;
+        display: inline-block;
+        line-height: 3rem;      
+    }
+  }
+

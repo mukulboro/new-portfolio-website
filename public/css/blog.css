@@ -1,0 +1,117 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #46484b;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 5rem;
+    color: #DDDDDD;
+}
+
+.search-bar{
+    width: 80%;
+    margin: 2rem 0 3rem 0;
+}
+
+.search-bar input{
+    width: 80%;
+    height: 3rem;
+    background-color: #46484b ;
+    border-style: solid;
+    border-radius: 30px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3rem;
+    color: #8a0f0f;
+}
+
+.search-bar button{
+    transition: 1s;
+    background-color: #ffffff00;
+    border-style: solid;
+    margin: 0%;
+    padding: 0.5%;
+    border-radius: 80%;
+    /* position: relative;
+    top: 0.5rem; */
+    color: #DDDDDD;
+    font-size: 2rem;        
+}
+
+.search-bar button:hover{
+    transition: 1s;
+    border-color: #8a0f0f;
+    color: #8a0f0f;
+}
+
+
+.blog-post{
+    transition: 1s;
+    border-style: solid;
+    border-color: #ffffff00;
+    border-width: 5px;
+    background-color: #8a0f0f;
+    background-position: center;
+    background-size: cover;
+    width: 80%;
+    text-align: left;
+    padding: 2%;
+    border-radius: 30px;
+    height: 7rem;
+    margin: 2rem 0 2rem 0;
+    
+}
+
+.blog-post h1{
+    transition: 1s;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 4rem;
+    color: #DDDDDD;
+}
+
+.blog-post h1:hover{
+    transition: 1s;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 5rem;
+    color: #8a0f0f;
+}
+
+.blog-post:hover{
+    transition: 1s;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    border-color: #8a0f0f;
+}
+
+.box{
+    margin: 4rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .blog-post h1{
+        font-size: 170%;
+        
+    }
+    
+    .blog-post h1:hover{
+        font-size: 1rem;
+        
+    }
+    
+    .box{
+        margin: 1rem;
+    }
+    
+}
+

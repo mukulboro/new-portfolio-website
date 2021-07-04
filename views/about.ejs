@@ -1,0 +1,70 @@
+<%- include('partials/top_nav',  {pageTitle: "About"})%> 
+<link rel="stylesheet" href="css/portfolio.css">
+
+<body>
+  <div id="#pageTop"></div>
+    <h1>About Me</h1>
+    <center>
+        <h2>Well, you are looking at my website, so why not take the time to get to know me better?</h2>
+        <h2>Here are some quick facts about me:</h2>
+
+        <button class="accordion">Wait, who are you?</button>
+        <div class="panel">
+            <p>Hi buddy, I am Mukul Aryal.<br>I write stupid code that works(most of the time).</p>
+            <img src="https://yeklo.s3.amazonaws.com/upload/photos/2020/04/Cj4TJhtCBef564rlp2kP_avatar.jpg?cache=0" alt="mukul-aryal">
+            <p>I was born and raised in Kathmandu, and I have immense love for the city.</p>
+        </div>
+
+        <button class="accordion">What do you do?</button>
+        <div class="panel">
+            <p>I don't do anything professionally(yet), but I like to write code and make whatever my heart desires.</p>
+            <p>You may find some of my most recent projects in the <a href="/portfolio">portfolio</a> section of this website.</p>
+        </div>
+
+        <button class="accordion">What other skills do you have?</button>
+        <div class="panel">
+            <p>I can write content and make videos.</p>
+            <p>During middle school, I ran a technology blog called MoMo Tech Nepal. While that is now completely dead, I make YouTube videos in my spare time nowadays.</p>
+            <a href="https://www.youtube.com/channel/UCIwyCyEBJHAL356l6Bjccrg"><img id="youtube" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/1280px-YouTube_full-color_icon_%282017%29.svg.png" alt="youtube-channel"></a>
+            <p>I have also written content for other blogs which you may find scattered around the inetrnet; but I'm too lazy to search and link those articles.</p>
+            <p>You can still read some of what I've written in the <a href="/blog">blog</a> section of this website.</p>
+        </div>
+        
+        <button class="accordion">How did you start programming?</button>
+        <div class="panel">
+            <p>I've always had a keen interest in programming since the early days. Infact, I was one of the best QBASIC programmers in my school😎</p>
+            <p>But I was always too lazy to learn on my own.</p>
+            <p>During the first quarter of 2021, I had to go through a surgery. My bed rest commbined with the fact that Nepal was in lockdown again made it so that I was stuck indoors for a LONG time.</p>
+            <p>I decided to learn how to code with Python first and then I made JavaScript my language of choice.</p>
+            <p>This website you're looking at is roughly what 3 months of learning has turned into.</p>
+        </div>
+
+        <div id="last-accordion">
+          <button class="accordion">What do you admire the most about life?</button>
+          <div class="panel">
+              <p>MoMos.</p>
+              <p>That's it.</p>
+          </div>
+        </div>
+    </center>
+</body>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      $(panel).slideToggle();
+    } else {
+      $(panel).slideToggle();
+    }
+  });
+}
+</script>
+
+<%- include('partials/footer') %> 

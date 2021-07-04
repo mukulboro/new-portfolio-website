@@ -1,0 +1,24 @@
+<%- include('partials/top_nav',  {pageTitle: "Blog"})%> 
+<link rel="stylesheet" href="css/blog.css">
+<div id="#pageTop"></div>
+    <center>
+        <h1>Blog</h1>
+    <div class="search-bar">
+        <form action="/blog" method="POST">
+            <input type="text" name="search" placeholder="Search">
+            <button><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+    <% posts.reverse() %>
+    <% for(postIndex in posts){ %>
+    <% const currentPost = posts[postIndex] %>  
+    <a href="<%="/blog/"+ currentPost.kebabUrl %>">
+        <div class="blog-post" style="background-image: url('<%= currentPost.imageURL %>');">
+            <h1><%= currentPost.title %> </h1>
+        </div>
+    </a>
+    <% } %> 
+    </center>
+</body>
+
+<%- include('partials/footer') %> 

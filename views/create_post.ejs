@@ -1,0 +1,24 @@
+<%- include('partials/top_nav',  {pageTitle: "Admin Dashboard"})%>
+<link rel="stylesheet" href="css/admin.css">
+<script src="https://cdn.ckeditor.com/4.16.1/standard/ckeditor.js"></script>
+
+<body>
+    <center>
+        <h1>Create Post</h1>
+        <form action="/new-post" method="POST">
+            <input type="text" name="post_title" placeholder="Post Title"><br>
+            <input type="text" name="image_url" placeholder="Image URL"><br>
+            <section class="post-body">
+                <textarea name="post_body" id="body"></textarea>
+                <script>
+                        CKEDITOR.replace( 'post_body' );
+                </script>
+
+            </section>
+                <br>
+            <button type="submit">Submit</button>
+        </form>
+    </center>
+</body>
+
+<%- include('partials/footer') %> 

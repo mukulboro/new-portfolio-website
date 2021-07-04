@@ -1,0 +1,72 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #46484b;
+    text-align: center;
+}
+
+h1{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 5rem;
+    color: #DDDDDD;
+}
+
+.mapouter{
+    position:relative;
+    text-align:right;
+    height:500px;
+    width:600px;
+}
+
+.gmap_canvas {
+    border-radius: 30px;
+    border-style: solid;
+    border-color: #8a0f0f;
+    overflow:hidden;
+    background:none!important;
+    height:500px;
+    width:600px;
+}
+
+iframe{
+    width: 600px;
+    height: 500px;
+}
+
+.details{
+    padding: 2%;
+}
+
+.details h2{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2rem;
+    color: #DDDDDD;
+    margin-top: 8px;
+}
+
+.fai{
+    margin-top: 10px;
+    font-size: 5rem;
+    color: #DDDDDD;
+}
+
+
+@media only screen and (max-width: 600px) {
+    iframe{
+        width: 400px;
+        height: 400px;
+    }
+
+    .gmap_canvas {
+        height:400px;
+        width:400px;
+    }
+
+    .details h2{
+        font-size: 1rem;
+    }
+}

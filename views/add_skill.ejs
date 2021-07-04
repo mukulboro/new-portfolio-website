@@ -1,0 +1,25 @@
+<%- include('partials/top_nav',  {pageTitle: "Admin Dashboard"})%>
+<link rel="stylesheet" href="css/admin.css">
+<script src="https://cdn.ckeditor.com/4.16.1/standard/ckeditor.js"></script>
+
+<body>
+    <center>
+        <h1>Add to Portfolio</h1>
+        <form action="/add-skill" method="POST">
+            <input type="text" name="skill_title" placeholder="Skill Title"><br>
+            <input type="text" name="technology_used" placeholder="Technologies"><br>
+            <input type="text" name="github_link" placeholder="GitHub Link"><br>
+            <section class="post_body">
+                <textarea name="skill_body" id="body"></textarea>
+                <script>
+                        CKEDITOR.replace( 'skill_body' );
+                </script>
+
+            </section>
+                <br>
+            <button type="submit">Submit</button>
+        </form>
+    </center>
+</body>
+
+<%- include('partials/footer') %> 

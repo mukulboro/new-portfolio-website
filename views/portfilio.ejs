@@ -1,0 +1,25 @@
+<%- include('partials/top_nav',  {pageTitle: "Portfolio"})%> 
+<link rel="stylesheet" href="css/portfolio.css">
+<div id="#pageTop"></div>
+
+<body>
+    <h1>Portfolio</h1>
+    <center>
+        <% skills.reverse() %>
+        <% for(skillIndex in skills) {%>
+            <% currentSkill = skills[skillIndex] %>
+            
+            <div class="skill">
+                <h2> <%= currentSkill.title %> </h2>
+                <h3> <%= currentSkill.technology %> </h3>
+                <p>
+                    <%- currentSkill.description %>
+                </p>
+                <a href="<%= currentSkill.gitHub %>"><img src="assets/github.png" alt="project-on-github"></a>
+            </div>
+
+            <% } %> 
+    </center>
+</body>
+
+<%- include('partials/footer') %> 
